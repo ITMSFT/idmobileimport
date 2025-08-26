@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  DEBUG: Це кореневий елемент для всього дерева продуктів.
+  Вважається хорошою практикою мати єдиний кореневий елемент у XML-документі.
+-->
+<products_tree>
+  <category name="Аксесуари для мобільних пристроїв">
+    
+    <!-- DEBUG: Блок продукту для 'Зарядні пристрої' -->
+    <product name="Зарядні пристрої">
+      <group name="Загальні">
+        <char name="Бренд виробника" example="Hoco"/>
+        <char name="Модель" example="N32 Glory PD30W"/>
+        <char name="Матеріал" example="Вогнетривкий PC"/>
+        <char name="Комплектація" example="Набір з кабелем 1м Type-C на Type-C"/>
+        <char name="Тип зарядного пристрою" example="Мережевий, Бездротовий, Автомобільний"/>
+      </group>
+      <group name="Технічні характеристики">
+        <char name="Вхідна потужність" example="AC110-240V, 50/60Hz, 0.8A"/>
+        <char name="Вихідна потужність" example="Type-C: 5V/3A, 9V/3A, 10V/2A, 12V/2.5A, 15V/2A, 20V/1.5A – 30W max"/>
+        <char name="PPS (Programmable Power Supply)" example="5-11V / 3A"/>
+        <char name="Кількість портів" example="1 x Type-C"/>
+        <char name="Підтримка протоколів швидкої зарядки" example="PD30W, PPS, QC3.0, FCP, AFC"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Чохли' -->
+    <product name="Чохли">
+      <group name="Сумісність">
+        <char name="Бренд пристрою" example="Apple"/>
+        <char name="Модель пристрою" example="Apple iPhone 16 Pro"/>
+        <char name="Серія" example="iPhone"/>
+      </group>
+      <group name="Загальні">
+        <char name="Бренд виробника" example="Leather Case"/>
+        <char name="Колекція" example="Накладка Leather Case New with MagSafe"/>
+        <char name="Вид товару" example="Оригінальний, Копія"/>
+        <char name="Форм-фактор" example="Накладка, Книжка, Бампер"/>
+        <char name="Тип матеріалу" example="Силікон+Екошкіра"/>
+        <char name="Тип упаковки" example="Тех-пак, Роздрібна"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Захисне скло' -->
+    <product name="Захисне скло">
+      <group name="Сумісність">
+        <char name="Бренд пристрою" example="Apple"/>
+        <char name="Модель пристрою" example="Apple iPhone 15 Plus / 16 Plus"/>
+        <char name="Серія" example="iPhone"/>
+      </group>
+      <group name="Загальні">
+        <char name="Бренд виробника" example="G-Rhino"/>
+        <char name="Колекція" example="Захисне скло G-Rhino Glass"/>
+        <char name="Вид товару" example="Оригінальний"/>
+        <char name="Тип захисного скла" example="Full Glue Premium, 2.5D, 3D"/>
+        <char name="Тип упаковки" example="Тех-пак"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Кабелі' -->
+    <product name="Кабелі">
+      <group name="Загальні">
+        <char name="Бренд" example="Hoco"/>
+        <char name="Модель" example="X93 Force PD20W"/>
+      </group>
+      <group name="Технічні характеристики">
+        <char name="Тип кабелю" example="Type-C / Lightning"/>
+        <char name="Конектори" example="male-male"/>
+        <char name="Потужність, Вт" example="Від 5 до 15"/>
+      </group>
+      <group name="Фізичні характеристики">
+        <char name="Довжина кабелю, м" example="1"/>
+        <char name="Матеріал корпусу" example="Текстиль"/>
+        <char name="Форма кабелю" example="Кругла"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Навушники' -->
+    <product name="Навушники">
+      <group name="Загальні">
+        <char name="Бренд" example=""/>
+        <char name="Термін гарантії" example="6 міс."/>
+        <char name="Матеріал корпусу" example="ABS пластик + силікон"/>
+        <char name="Конструкція" example="Складні"/>
+        <char name="Тип конструкції" example="Внутрішньоканальний"/>
+        <char name="Вид навушників" example="Вакуумні"/>
+      </group>
+      <group name="Аудіо характеристики">
+        <char name="Опір, Ом" example="32"/>
+        <char name="Частотний діапазон, Гц" example="20 - 20000"/>
+        <char name="Чутливість, Дб" example="98"/>
+      </group>
+      <group name="Підключення">
+        <char name="Спосіб підключення" example="Дротовий, Бездротовий"/>
+        <char name="Інтерфейс підключення" example="Бездротовий, USB, Type-C, Micro-usb, Lightning"/>
+        <char name="Версія bluetooth" example="5.3"/>
+      </group>
+      <group name="Живлення (для бездротових)">
+        <char name="Час у режимі відтворення, год" example="4"/>
+        <char name="Час у режимі очікування, год" example="150"/>
+        <char name="Час у режимі розмови, год" example="4"/>
+        <char name="Час заряду боксу, год" example="1"/>
+        <char name="Ємність акумулятора док-станції, mAh" example="300"/>
+        <char name="Ємність акумулятора, mAh" example="30"/>
+        <char name="Магнітна кришка" example="Так"/>
+        <char name="Рівень заряду боксу" example="Так"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Power Bank' -->
+    <product name="Power Bank">
+      <group name="Загальні">
+        <char name="Бренд" example="Xiaomi"/>
+        <char name="Тип" example="Зовнішній акумулятор (павербанк)"/>
+        <char name="Сумісні пристрої" example="смартфони, планшети"/>
+      </group>
+      <group name="Параметри батареї">
+        <char name="Ємність батареї, мАг" example="20000"/>
+        <char name="Ємність батареї, Вт·год" example="74"/>
+        <char name="Тип батареї" example="Li-Pol"/>
+        <char name="Підтримка швидкої зарядки" example="Так"/>
+      </group>
+      <group name="Параметри заряду">
+        <char name="Порти підключення пристроїв" example="USB Type-A, USB Type-C"/>
+        <char name="Загальна вихідна потужність, Вт" example="50"/>
+        <char name="Кількість виходів USB Type-A" example="2"/>
+        <char name="Кількість виходів USB Type-C" example="1"/>
+        <char name="Потужність зарядки USB Type-C, Вт" example="50"/>
+        <char name="Потужність зарядки USB Type-A, Вт" example="22.5"/>
+        <char name="Порт для зарядки Power Bank" example="USB Type-C"/>
+        <char name="Потужність заряду Power Bank, Вт" example="45"/>
+        <char name="Підтримка зарядки ноутбука" example="Так"/>
+      </group>
+      <group name="Фізичні параметри">
+        <char name="Індикація" example="світлодіодний індикатор"/>
+        <char name="Розміри, мм" example="153,5x73,5x27,5"/>
+        <char name="Вага, г" example="430"/>
+        <char name="Колір" example="чорний"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Тримачі для телефонів' -->
+    <product name="Тримачі для телефонів">
+      <group name="Загальні">
+        <char name="Бренд" example="Baseus"/>
+        <char name="Тип" example="Тримач для смартфона"/>
+        <char name="Місце встановлення" example="лобове скло, решітка кондиціонера, торпедо"/>
+        <char name="Тип кріплення в салоні" example="затискач"/>
+        <char name="Тип кріплення пристрою" example="затискач"/>
+      </group>
+      <group name="Сумісність">
+        <char name="Мінімальна діагональ, дюйм" example="4.7"/>
+        <char name="Максимальна діагональ, дюйм" example="6.5"/>
+        <char name="Мінімальна ширина, мм" example="70"/>
+        <char name="Максимальна ширина, мм" example="100"/>
+      </group>
+      <group name="Додатково">
+        <char name="Підтримка бездротової зарядки" example="Так, 15W"/>
+        <char name="Особливості" example="Інфрачервоний сенсор, автоматичний розсувний механізм"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Акумулятори (для пристроїв)' -->
+    <product name="Акумулятори (для пристроїв)">
+      <group name="Загальні">
+        <char name="Тип АКБ" example="Li-pol"/>
+        <char name="Термін гарантії" example="6 міс."/>
+      </group>
+      <group name="Технічні характеристики">
+        <char name="Типова ємність, mAh" example="4000"/>
+        <char name="Номінальна ємність, mAh" example="3900"/>
+        <char name="Типова енергія, Wh" example="15.4"/>
+        <char name="Номінальна енергія, Wh" example="15"/>
+        <char name="Номінальна напруга, V" example="3.85"/>
+      </group>
+      <group name="Фізичні параметри">
+        <char name="Висота, мм" example=""/>
+        <char name="Ширина, мм" example=""/>
+        <char name="Товщина, мм" example="3.9"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Карти пам'яті та Флешки' -->
+    <product name="Карти пам'яті та Флешки">
+      <group name="Карта пам'яті">
+        <char name="Тип" example="карта пам'яті"/>
+        <char name="Бренд" example="T&amp;G"/>
+        <char name="Об'єм пам'яті" example="64GB"/>
+        <char name="Інтерфейс" example="micro SDXC"/>
+        <char name="Клас швидкості" example="UHS-1 Class 10"/>
+        <char name="Комплектація" example="з адаптером"/>
+        <char name="Гарантія" example="24 місяці"/>
+      </group>
+      <group name="Flash-накопичувач">
+        <char name="Тип" example="flash-накопичувач"/>
+        <char name="Бренд" example="T&amp;G"/>
+        <char name="Об'єм пам'яті" example="8GB"/>
+        <char name="Інтерфейс" example="3.0 USB+Lightning+microUSB"/>
+        <char name="Матеріал корпусу" example="Металевий"/>
+        <char name="Колір" example="Сріблястий"/>
+        <char name="Вага, г" example="8"/>
+        <char name="Гарантія" example="5 років"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Портативні колонки' -->
+    <product name="Портативні колонки">
+      <group name="Загальні">
+        <char name="Бренд" example="JBL"/>
+        <char name="Тип" example="Портативна колонка"/>
+        <char name="Колір" example="чорний"/>
+        <char name="Комплектація" example="Шнур живлення, Посібник"/>
+      </group>
+      <group name="Підключення">
+        <char name="Спосіб підключення" example="Дротовий, Бездротовий"/>
+        <char name="Версія Bluetooth" example="5.2"/>
+        <char name="Роз'єми" example="USB Type-C, AUX in"/>
+      </group>
+      <group name="Аудіо характеристики">
+        <char name="Потужність, Вт" example="180"/>
+        <char name="Частотний діапазон, Гц" example="40 - 20000"/>
+      </group>
+      <group name="Живлення та автономність">
+        <char name="Джерело живлення" example="від акумулятора"/>
+        <char name="Ємність акумулятора, мАг" example="10000"/>
+        <char name="Час автономної роботи, год" example="24"/>
+        <char name="Функція Power Bank" example="Так"/>
+      </group>
+      <group name="Фізичні параметри">
+        <char name="Захист корпусу" example="IP67"/>
+        <char name="Розміри, мм" example="482,6x200,6x256"/>
+        <char name="Вага, кг" example="6,6"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Клавіатури' -->
+    <product name="Клавіатури">
+      <group name="Загальні">
+        <char name="Бренд" example="Logitech"/>
+        <char name="Тип" example="Клавіатура"/>
+        <char name="Форм-фактор" example="стандартна"/>
+        <char name="Тип клавіш" example="мембранний"/>
+        <char name="Колір" example="сірий/чорний"/>
+      </group>
+      <group name="Підключення">
+        <char name="Тип підключення" example="Бездротове"/>
+        <char name="Інтерфейс" example="Bluetooth, радіоінтерфейс"/>
+      </group>
+      <group name="Функціональність">
+        <char name="Підсвічування" example="Так"/>
+        <char name="Програмовані кнопки" example="Так"/>
+        <char name="Підтримка Multi-Device" example="Так"/>
+        <char name="Сумісність з Apple" example="Так"/>
+      </group>
+      <group name="Живлення">
+        <char name="Джерело живлення" example="акумулятор"/>
+        <char name="Ємність акумулятора, мАг" example="1500"/>
+        <char name="Час автономної роботи, год" example="240"/>
+        <char name="Тип зарядки" example="USB-C"/>
+      </group>
+      <group name="Фізичні параметри">
+        <char name="Розміри, мм" example="430x132x21"/>
+        <char name="Вага, г" example="810"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Мишки' -->
+    <product name="Мишки">
+      <group name="Загальні">
+        <char name="Бренд" example="Razer"/>
+        <char name="Тип" example="Миша"/>
+        <char name="Конструкція корпусу" example="симетрична"/>
+        <char name="Кількість кнопок" example="5"/>
+        <char name="Колір" example="чорний"/>
+      </group>
+      <group name="Підключення">
+        <char name="Тип підключення" example="Дротове, Бездротове"/>
+        <char name="Інтерфейс" example="радіоінтерфейс"/>
+      </group>
+      <group name="Сенсор">
+        <char name="Тип сенсора" example="оптичний"/>
+        <char name="Роздільна здатність, DPI" example="35000"/>
+      </group>
+      <group name="Живлення">
+        <char name="Джерело живлення" example="акумулятор"/>
+      </group>
+      <group name="Фізичні параметри">
+        <char name="Розміри, мм" example="127,1x63,9x39,9"/>
+        <char name="Вага, г" example="54"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Освітлення' -->
+    <product name="Освітлення">
+      <group name="Ліхтарі">
+        <char name="Бренд" example="Fenix"/>
+        <char name="Тип" example="Ручний ліхтар"/>
+        <char name="Джерело світла" example="світлодіод"/>
+        <char name="Світловий потік, люмен" example="500"/>
+        <char name="Дальність потоку, м" example="1500"/>
+        <char name="Матеріал корпусу" example="алюміній"/>
+        <char name="Захист" example="IP68, ударостійкість"/>
+        <char name="Джерело живлення" example="акумулятор 1х21700"/>
+        <char name="Час роботи, год" example="7"/>
+        <char name="Тип зарядки" example="USB"/>
+      </group>
+      <group name="Штативи">
+        <char name="Бренд" example="Arsenal"/>
+        <char name="Тип" example="підлоговий штатив, трипод"/>
+        <char name="Призначення" example="фото/відео"/>
+        <char name="Максимальна висота, см" example="150"/>
+        <char name="Максимальне навантаження, кг" example="3"/>
+        <char name="Тип голови" example="3D"/>
+        <char name="Матеріал" example="алюмінієвий сплав"/>
+        <char name="Вага, кг" example="1,2"/>
+        <char name="Комплектація" example="чохол"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'FM-модулятори' -->
+    <product name="FM-модулятори">
+      <group name="Загальні">
+        <char name="Бренд" example="Borofone"/>
+        <char name="Тип" example="FM-трансмітер"/>
+      </group>
+      <group name="Функціональність">
+        <char name="Роз'єми" example="2xUSB"/>
+        <char name="Підтримка карт пам'яті" example="Micro-SD"/>
+        <char name="Підтримка Bluetooth" example="Так"/>
+        <char name="Підтримувані формати" example="MP3 / WMA / WAV"/>
+      </group>
+      <group name="Живлення">
+        <char name="Напруга, В" example="12"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Відеореєстратори' -->
+    <product name="Відеореєстратори">
+      <group name="Загальні">
+        <char name="Бренд" example="70mai"/>
+        <char name="Тип" example="Автомобільний відеореєстратор"/>
+      </group>
+      <group name="Параметри відео">
+        <char name="Роздільна здатність" example="2304x1296"/>
+        <char name="Частота запису, кадр/сек" example="30"/>
+        <char name="Кут огляду" example="130"/>
+        <char name="Формат відео" example="MP4 (H.264)"/>
+        <char name="Підтримка HDR / WDR" example="Так"/>
+      </group>
+      <group name="Функціональність">
+        <char name="Активація запису" example="За датчиком руху, автоматично"/>
+        <char name="Датчик удару (G-Sensor)" example="Так"/>
+        <char name="Датчик руху" example="Так"/>
+        <char name="Голосове керування" example="Так"/>
+        <char name="Wi-Fi" example="Так"/>
+      </group>
+      <group name="Пам'ять та живлення">
+        <char name="Підтримка карт пам'яті" example="MicroSD, до 256 ГБ"/>
+        <char name="Джерело живлення" example="вбудований акумулятор, 300 мАг"/>
+        <char name="Роз'єм" example="USB Type-C"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Ремінці для смарт-годинників' -->
+    <product name="Ремінці для смарт-годинників">
+      <group name="Сумісність">
+        <char name="Бренд пристрою" example="Apple"/>
+      </group>
+      <group name="Загальні">
+        <char name="Виробник" example="Silicone Two-Piece"/>
+        <char name="Матеріал ремінця" example="Силікон"/>
+        <char name="Матеріал корпусу" example="Метал"/>
+        <char name="Тип застібки" example="Кнопка"/>
+        <char name="Термін гарантії" example="6 міс."/>
+      </group>
+      <group name="Фізичні параметри">
+        <char name="Довжина, мм" example="271"/>
+        <char name="Ширина, мм" example="50"/>
+        <char name="Вага, кг" example="0.017"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Смарт-годинники' -->
+    <product name="Смарт-годинники">
+      <group name="Загальні">
+        <char name="Бренд" example="Amazfit"/>
+        <char name="Лінійка" example="T-Rex 3"/>
+        <char name="Тип" example="Смарт-годинник"/>
+        <char name="Операційна система" example="Zepp OS"/>
+      </group>
+      <group name="Сумісність">
+        <char name="iOS" example="Так"/>
+        <char name="Android" example="Так"/>
+      </group>
+      <group name="Дисплей">
+        <char name="Тип дисплея" example="AMOLED"/>
+        <char name="Форма" example="кругла"/>
+        <char name="Діагональ, дюйм" example="1,5"/>
+        <char name="Роздільна здатність" example="480x480"/>
+      </group>
+      <group name="Датчики та функції">
+        <char name="Типи активності" example="170+ режимів"/>
+        <char name="Пульсометр" example="Так"/>
+        <char name="Пульсоксиметр (SpO2)" example="Так"/>
+        <char name="Тонометр" example="Так"/>
+        <char name="Відстеження сну" example="Так"/>
+        <char name="GPS" example="Так"/>
+        <char name="NFC" example="Так"/>
+        <char name="Wi-Fi" example="Так"/>
+        <char name="Bluetooth" example="5.2"/>
+      </group>
+      <group name="Корпус і ремінець">
+        <char name="Матеріал корпусу" example="пластик, сталь"/>
+        <char name="Захист" example="10ATM"/>
+        <char name="Матеріал ремінця" example="силікон"/>
+      </group>
+      <group name="Живлення">
+        <char name="Ємність акумулятора, мАг" example="700"/>
+        <char name="Час роботи" example="до 27 днів"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Догляд за волоссям та тілом' -->
+    <product name="Догляд за волоссям та тілом">
+      <group name="Фени">
+        <char name="Бренд" example="Dyson"/>
+        <char name="Тип" example="Фен"/>
+        <char name="Потужність, Вт" example="1600"/>
+        <char name="Кількість швидкостей" example="3"/>
+        <char name="Кількість температурних режимів" example="4"/>
+        <char name="Кількість насадок" example="5"/>
+        <char name="Функції" example="Подача холодного повітря"/>
+      </group>
+      <group name="Стайлери">
+        <char name="Бренд" example="Dyson"/>
+        <char name="Тип" example="Стайлер (випрямляч)"/>
+        <char name="Кількість температурних режимів" example="3 для сухого, 3 для мокрого волосся"/>
+        <char name="Функції" example="Автовимкнення, Іонізація"/>
+        <char name="Дисплей" example="Так"/>
+      </group>
+      <group name="Тримери">
+        <char name="Бренд" example="Philips"/>
+        <char name="Тип" example="Машинка для стрижки+тример"/>
+        <char name="Кількість насадок" example="10"/>
+        <char name="Діапазон довжини, мм" example="0,5 - 16"/>
+        <char name="Матеріал лез" example="нержавіюча сталь"/>
+        <char name="Живлення" example="акумулятор"/>
+        <char name="Час роботи, хв" example="120"/>
+        <char name="Особливості" example="Вологе очищення, Швидка зарядка"/>
+      </group>
+      <group name="Електробритви">
+        <char name="Бренд" example="Philips"/>
+        <char name="Тип" example="Електробритва чоловіча"/>
+        <char name="Система гоління" example="роторна"/>
+        <char name="Живлення" example="акумулятор"/>
+        <char name="Функції" example="Можливість вологого гоління, плаваючі головки"/>
+        <char name="Час роботи, хв" example="60"/>
+      </group>
+    </product>
+
+    <!-- DEBUG: Блок продукту для 'Мікрофони' -->
+    <product name="Мікрофони">
+      <group name="Загальні">
+        <char name="Бренд" example="DJI"/>
+        <char name="Тип" example="Мікрофонна радіосистема"/>
+        <char name="Спрямованість" example="всеспрямований"/>
+        <char name="Частотний діапазон, Гц" example="20-20000"/>
+      </group>
+      <group name="Підключення">
+        <char name="Спосіб підключення" example="бездротовий"/>
+        <char name="Роз'єми" example="USB Type-C, mini jack 3,5 мм, Bluetooth 5.3"/>
+      </group>
+      <group name="Радіосистема">
+        <char name="Радіус дії, м" example="400"/>
+        <char name="Час автономної роботи, год" example="11.5"/>
+        <char name="Кількість передавачів" example="2"/>
+        <char name="Комплектація" example="Зарядний кейс, вітрозахист"/>
+      </group>
+    </product>
+
+  </category>
+</products_tree>
