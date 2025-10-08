@@ -103,9 +103,9 @@ Our support:
 
 #### 3.2. Приклад вмісту файлу `stock_price.csv`
 ```csv
-SKU;Available;OptPrice1;OptPrice2;OptPrice3
-tshirt-logo-blue-m;50;450.00;420.50;400.00
-tshirt-logo-black-m;21;450.00;420.50;400.00
+Name;SKU;Available;OptPrice1;OptPrice2;OptPrice3
+Product1;tshirt-logo-blue-m;50;450.00;420.50;400.00
+Product2;tshirt-logo-black-m;21;450.00;420.50;400.00
 ```
 
 ### 4. 🚚 Вимоги до SFTP-з'єднання
@@ -426,9 +426,9 @@ tshirt-logo-black-m;21;450.00;420.50;400.00
 
 #### 3.2. Пример содержимого файла `stock_price.csv`
 ```csv
-SKU;Available;OptPrice1;OptPrice2;OptPrice3
-tshirt-logo-blue-m;50;450.00;420.50;400.00
-tshirt-logo-black-m;21;450.00;420.50;400.00
+Name;SKU;Available;OptPrice1;OptPrice2;OptPrice3
+Product1;tshirt-logo-blue-m;50;450.00;420.50;400.00
+Product2;tshirt-logo-black-m;21;450.00;420.50;400.00
 ```
 
 ### 4. 🚚 Требования к SFTP-соединению
